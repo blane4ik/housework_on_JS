@@ -66,7 +66,7 @@ function deleteSelected() {
 	[...todos].forEach(function(todo, i){
 		if (todo.check == 'true'){
 			todos.splice(i, 1);
-			arr[i] && arr[i].remove();
+			arr[i].remove();
 		} 
 	})
 };
